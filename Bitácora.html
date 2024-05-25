@@ -124,8 +124,24 @@
 							<h1>Semana 9:ARDUINO</h1>
 							<span class="image main"><img src="images/b9183559-a715-4e0a-a081-0ab8856663d0.jpg" alt="" /></span>
 							<p>Nos centramos en la construcción de circuitos utilizando Arduino. Realizamos dos proyectos: un LED parpadeante y un LED controlado por un pulsador. Cada proyecto incluyó la creación del circuito y la generación de los códigos de programación necesarios para su funcionamiento. </p>
-							<p></p>
-							<p></p>
+							<p>CODIGO de PROGRAMACIÓN Led con Pulsador: 
+								int LED = 13; 
+								int pulsador = 5;
+								 int estado;
+								 void setup() {
+								 pinMode(LED,OUTPUT); pinMode(pulsador,INPUT_PULLUP); 
+								estado=0; 
+								}
+								 void loop() {
+								 while(digitalRead(pulsador)==HIGH); 
+								estado = digitalRead(LED); digitalWrite(LED,!estado); while(digitalRead(pulsador)==LOW); </p>
+							<p>MATERIALES: 
+								1 ARDUINO UNO
+								 1 LED  
+								1 PULSADOR
+								 1 RESISTENCIAS DE 1K 
+								1 PROTOBOARD 
+								3 CABLES JUMPER DE CONEXION</p>
 						</div>
 					</div>
 
